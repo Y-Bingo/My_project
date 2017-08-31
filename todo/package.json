@@ -1,0 +1,20 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Y_Bingo <Y_Bingo@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datetimepicker": "^0.1.38",
+    "jquery": "^3.2.1",
+    "jquery-datetimepicker": "^2.5.4",
+    "normalize.css": "^7.0.0",
+    "store": "^2.0.12",
+    "store.js": "^1.0.4"
+  }
+}

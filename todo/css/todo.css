@@ -1,0 +1,181 @@
+* {
+  /* background: rgba(0,0,0,.1); */
+  box-sizing: border-box;
+  transition: background-color .2s;
+  outline: 0;
+}
+
+/*
+     为什么要重置样式？
+     normalize.css
+    使用其他css库，可以不引用。
+*/
+body {
+  background-color: #00334b;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+.msg{
+  display: none;
+  padding: 10px;
+  color: #222;
+  background-color: #ffe264;
+  text-align: center;
+}
+.task-list {
+  margin: 10px 0;
+}
+input,
+.task-item,
+button,
+.task-detail-mask,
+textarea ,
+.task-detail{
+  padding: 10px;
+  border-radius: 3px;
+}
+textarea,
+input[type='text'],
+input[type='date'],
+button {
+  border: 0;
+}
+
+textarea{
+   min-height: 100px;   
+}
+textarea,
+input[type='text'],
+input[type='date'],
+textarea{
+  width: 100%;
+  background-color: #ddd;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.alert-cancel:hover,
+input[type='text']:hover,
+input[type='date']:hover,
+input[type='text']:focus,
+input[type='date']:focus,
+textarea:hover,
+textarea:focus, {
+  background-color: #fff;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.add-task input[type='text'] {
+  float: left;
+  width: 84%;
+  margin-right: 1%;
+}
+.alert-confirm,
+.add-task [type='submit'] {
+  background-color: #46b1e4;
+}
+.add-task [type='submit']{
+    width: 15%;
+}
+
+.alert-confirm:hover,
+.add-task [type='submit']:hover {
+  background-color: #54c5fb;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+}
+
+button,
+.task-item,
+.add-task [type='submit'] {
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+.task-item {
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.task-item:hover {
+    background-color: #ddd;
+}
+
+.task-item.completed{
+  color: #aaa;
+  background-color: rgba(255, 255, 255, .8);
+}
+.task-item.completed:after{
+  content: " ";
+  display: block;
+  position: relative;
+  top: -9px;
+  right:-14px;
+  height: 1px;
+  width: 85%;
+  color: #111;
+
+}
+
+.task-detail-mask,
+.task-detail {
+    position: absolute;
+}
+.task-detail {
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    display: none; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 3px 0 0 3px;
+}
+
+.task-detail .content {
+  padding: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.task-detail form > div {
+  margin-bottom: 8px;
+}
+.task-detail-mask {
+  position: fixed;
+  /* 绝对定位的四个方向全部操作能定宽高 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(150, 150, 150, .3);
+  display: none;
+}
+.task-content{
+    margin-left: 10px;
+}
+.anchor{
+    color: #888;
+    font-size: 90%;
+    padding: 0 5px;
+}
+.anchor:hover{
+    color: #666;
+}
+.fr{
+    float: right;
+}
