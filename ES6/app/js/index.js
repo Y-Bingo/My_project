@@ -24,4 +24,20 @@
 
 // console.log(lm.a);
 
-import "./class/Destructuring";
+/* 结构赋值 */
+// import "./class/Destructuring";
+/* 正则表但是扩展 */
+// import './class/Regex';
+/* 字符串扩展 */
+// import './class/string';
+/* 数值扩展 */
+// import './class/Math';
+/* 数组扩展 */
+// import './class/array';
+/* 函数扩展 */
+// import './class/Fun';
+/* 对象扩展 */
+// import './class/obj';
+
+
+import Lottery from './lottery';
