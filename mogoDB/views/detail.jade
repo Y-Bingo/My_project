@@ -1,0 +1,24 @@
+extend layout.jade
+
+block content
+	.container
+		.row
+			div.col-md-7
+				video(allowFullScreen="true",qulity="high",width="720",height="auto",controls="controls")
+					source(src="#{movie.flash}",type="video/mp4")
+			div.col-md-5
+				dl.dl-horizontal
+					dt 电影名字
+					dd= movie.title
+					dt 导演
+					dd= movie.doctor
+					dt 国家
+					dd= movie.country
+					dt 语言
+					dd= movie.languuage
+					dt 年份
+					dd= movie.year
+					dt 简介
+					dd= movie.summary
+
+
