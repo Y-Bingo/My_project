@@ -1,0 +1,86 @@
+@charset "utf-8";
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	font: "微软雅黑";
+} /*初始化body*/
+
+#music{
+	width: 360px;
+	height: 200px;
+	margin: auto;/*自动=是div居中*/
+}
+#game{
+	width: 360px;
+	height: 360px;
+	margin: auto;/*自动=是div居中*/
+	overflow: hidden;
+	position: relative;
+	
+}
+#game img{
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	transition: left 0.5s linear;
+}
+#game div{
+	width: 76px;
+	height: 76px;
+	margin: 1px;
+	border: 1px solid yellow;
+	float: left;
+	text-align: center;
+	line-height: 78px;
+	background-color: gold;
+	transition: transform 0.2s;
+}
+
+#game .d2{
+	color: grey;
+	background: orange;
+}
+#game .d4{
+	color: grey;
+	background: yellow;
+}
+#game .d8{
+	color: grey;
+	background: yellowgreen;
+}
+#game .d16{
+	color: grey;
+	background: darkorange;
+}
+#game .d32{
+	color: grey;
+	background: orangered;
+}
+#game .d64{
+	color: grey;
+	background: red;
+}
+#game .d128{
+	color: grey;
+	background: pink;
+}
+#game .d256{
+	color: grey;
+	background: blueviolet;
+}
+#game .d512{
+	color: grey;
+	background: blue;
+}
+#game .d1024{
+	color: grey;
+	background: goldenrod;
+}
+#game .d2048{
+	color: grey;
+	background:springgreen;
+}

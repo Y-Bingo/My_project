@@ -1,0 +1,47 @@
+@charset "utf-8";
+#game {
+	width: 500px;
+	height: 300px;
+	background-color: gray;
+}
+
+#game div {
+	width: 8px;
+	height: 8px;
+	float: left;
+	border: 1px solid transparent;
+}
+
+#game .show {
+	border: 1px solid white;
+	background-color: black;
+}
+
+#game .food1 {
+	background-color: red;
+	border: 1px solid transparent;
+	-webkit-animation-name: food;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#game .food2 {
+	background-color: blue;
+	border: 1px solid transparent;
+	-webkit-animation-name: food;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes food {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
