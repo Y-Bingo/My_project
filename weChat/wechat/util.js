@@ -3,6 +3,7 @@
 var xml2js  = require('xml2js')
 var Promise = require('bluebird')
 var tpl     = require('./tpl');
+
 // 解析xml 为js对象
 exports.parseXMLAsync = function(xml){
 	return new Promise(function(resolve,reject){
@@ -49,12 +50,11 @@ function formatMessage(result){
 // 因为有个回归调用，所以用以下暴露方法
 exports.formatMessage = formatMessage;
 
-exports.tpl  = function(contnet,message){
+exports.tpl  = function(content,message){
 	var info = {};//临时存储内容
 	var type = "text";
 	var fromUserName = message.FromUserName ;
 	var toUserName   = message.ToUserName;
-
 	// 如果为数组，则为图文消息
 	if(Array.isArray(content)){
 		type = 'news'
@@ -62,6 +62,7 @@ exports.tpl  = function(contnet,message){
 	// content有值则应覆盖
 	type = content.type || type;
 	info.content = content;
+
 	info.createTime = new Date().getTime();
 	info.toUserName = toUserName ;
 	info.fromUserName = fromUserName;
