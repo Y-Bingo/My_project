@@ -1,0 +1,11 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Y_Bingo <Y_Bingo@163.com>",
+  "license": "ISC"
+}

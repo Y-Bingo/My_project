@@ -1,0 +1,24 @@
+{
+  "name": "cms",
+  "description": "",
+  "main": "bin/www",
+  "authors": [
+    "Y_Bingo <Y_Bingo@163.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "cms"
+  ],
+  "homepage": "https://github.com/Y-Bingo/My_project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.6"
+  }
+}
