@@ -1,0 +1,22 @@
+<import src="../template/post_item/post_item.wxml" />
+<view>
+    <!-- 轮播图组件 -->
+    <swiper class='swiper' indicator-dots='true' autoplay='true' duration='400' circular='true'>
+        <swiper-item>
+            <image src='/images/post/xiaolong.jpg'></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/post/cat.png'></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/post/vr.png'></image>
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{postList}}" wx:key="{{item}}">
+        <!-- 绑定一个页面跳转事件 -->
+        <view catchtap='postDetail' data-postId="{{item.postId}}">
+             <!-- 不能绑定到template标签上 因为该标签页面中没有渲染-->
+             <template is="post_item" data="{{...item}}" ></template> 
+        </view>
+    </block>
+</view>
