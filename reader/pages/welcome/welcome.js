@@ -14,7 +14,6 @@ Page({
     
   },
   onTap: function(){
-      console.log('tap');
       wx.redirectTo({
           url: '../post/index'
       })

@@ -1,19 +1,20 @@
 <view class="container">
-    <image class='head-image' src='/images/post/cat.png'></image>
-    <image class='audio' src='/images/music/music-start.png'></image>
+       <image class='head-image' src='{{postD.headImgSrc}}'></image>   
+       <image class='audio' src="{{!isPlayMusic?'/images/music/music-start.png':'/images/music/music-stop.png'}}" catchtap='onMusicPlay'></image>   
     <view class='author-data'>
-        <image class="avatar" src='/images/avatar/1.png'></image>
-        <text class='author'>userName</text>
+         <image class="avatar" src='{{postD.avatar}}'></image> 
+        <text class='author'>{{postD.author}}</text>
         <text class='const-text'>发表于</text>
-        <text class='date'>三天前</text>
+        <text class='date'>{{postD.dateTime}}</text>
     </view>
-    <text class='title'>Title</text>
+    <text class='title'>{{postD.title}}</text>
     <view class="tool">
         <view class='circle-img'>
-            <image src='/images/icon/collection.png'></image>
-            <image class='share-img' src='/images/icon/share.png'></image>
+             <image wx:if="{{collected}}" src='/images/icon/collection.png' catchtap="onCollected"></image> 
+             <image wx:else src='/images/icon/collection-anti.png' catchtap="onCollected"></image> 
+             <image class='share-img' src='/images/icon/share.png' catchtap="onShare"></image> 
         </view>
         <view class='horizon'></view>
     </view>
-    <text class='detail'>ContentContentContentContentContentConten</text>
+    <text class='detail'>{{postD.detail}}}</text>
 </view>
