@@ -1,0 +1,8 @@
+ES6��http://ybingo_es6.tunnel.echomod.cn
+ngrok -config=ngrok.cfg -subdomain YBingo_ES6 80
+
+todo: 
+ngrok -config=ngrok.cfg -subdomain YBingo_todo 80
+
+WeChat:http://ybingo_wechat.tunnel.echomod.cn
+ngrok -config=ngrok.cfg -subdomain YBingo_wechat 80
